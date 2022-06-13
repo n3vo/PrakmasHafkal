@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header />
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path="/" element={<Login/>} />
           <Route element={<PrivateRoute />}>
